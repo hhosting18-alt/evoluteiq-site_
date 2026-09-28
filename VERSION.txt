@@ -1,0 +1,2 @@
+EvoluteIQ site build v16-20260928-1600
+Includes: blue CTA + footer (navy iq in wordmark), white roles tabs with blue pixel morph, white industries grid, aligned cards, minimal scrollbar, performance pass

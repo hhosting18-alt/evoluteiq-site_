@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EvoluteIQ — Automation that runs the whole process</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=v16-20260928-1600">
+</head>
+<body class="is-loading">
+
+<div id="loader" aria-hidden="true">
+  <svg class="orbits" viewBox="0 0 1320 704"><ellipse class="orb" cx="660" cy="352" rx="658" ry="350"/><ellipse class="orb b" cx="660" cy="352" rx="350" ry="350"/></svg>
+  <svg class="mark" viewBox="0 0 150 70" id="markSvg"></svg>
+</div>
+
+<div class="sbar" id="sbar" aria-hidden="true"><i id="sthumb"></i></div>
+
+<header class="header" id="hdr">
+  <nav class="left"><a href="#platform">Platform</a><a href="#industries">Solutions</a></nav>
+  <a class="logo" href="#top" aria-label="EvoluteIQ home"><img src="assets/images/logo.png" alt="EvoluteIQ — Absolute Automation"></a>
+  <nav class="right"><a class="pill ghost" href="#plans"><span data-t="Marketplace">Marketplace</span></a><a class="pill solid" href="#demo"><span data-t="Get a demo">Get a demo</span></a></nav>
+</header>
+
+<main id="top">
+<section class="stage" id="stage" aria-label="How EvoluteIQ works">
+  <div class="stage__sticky">
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="hero">
+      <div class="hero__content" id="heroC">
+        <h1 class="hero__title"><span class="ln"><span>Automation that runs</span></span><span class="ln"><span>the whole process,</span></span><span class="ln"><span><em>not just a task.</em></span></span></h1>
+        <p class="hero__sub">EvoluteIQ brings AI helpers, automatic bots and easy app-building tools into one place — so teams can design, launch and grow a complete business process without writing code.</p>
+        <img class="hero__badges" src="assets/images/badges.png" alt="Built on Google Cloud · Integrated with Gemini">
+      </div>
+      <a class="hero__scroll" href="#steps" id="scrollBtn">Scroll to discover the process</a>
+    </div>
+    <div class="flow" id="steps" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="sec domains wrap" id="domains" aria-label="Functional domains">
+  <div class="tools__head reveal">
+    <h2 class="h2">Automation for every team, <em>from finance to the front line.</em></h2>
+    <p class="lede">The same platform runs the work behind six parts of the business — each with its own processes, rules and pace.</p>
+  </div>
+  <div class="dgrid" id="domGrid"></div>
+</section>
+
+<section class="sec features" id="features">
+  <div class="features__sticky">
+    <h2 class="h2">See real results,<br><em>not just IT projects.</em></h2>
+    <div class="rs" id="rs">
+      <div class="rs__list" id="rsList"><div class="rs__line"><i id="rsFill"></i></div></div>
+      <div class="rs__art"><canvas id="rsCanvas" aria-hidden="true"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec logos" aria-label="Customers and press">
+  <div class="logos__row" id="usedBy"><p>Used by teams inside</p></div>
+  <div class="logos__row media" id="seenIn"><p>As seen in</p></div>
+</section>
+
+<section class="sec tools wrap" id="platform">
+  <div class="tools__head reveal">
+    <h2 class="h2">Everything a process needs, <em>in one place.</em></h2>
+    <p class="lede">Nine tools that usually live in separate apps — brought together so you don't have to connect them yourself.</p>
+  </div>
+  <div class="grid3" id="toolGrid"></div>
+  <div class="tools__foot reveal"><a class="pill solid" href="#plans"><span data-t="Explore products">Explore products</span></a></div>
+</section>
+
+<section class="sec standards" id="industries">
+  <div class="standards__c">
+    <div class="standards__img reveal" id="pvWrap"></div>
+    <div class="reveal">
+      <h2 class="h2">Built for industries that can't afford <em>to slow down.</em></h2>
+      <p class="desc">Six industries, one platform — with automation shaped around how each one actually works.</p>
+      <a class="pill solid" href="#demo"><span data-t="Get a demo">Get a demo</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="inds" aria-label="Industries">
+  <div class="industries" id="indGrid"></div>
+</section>
+
+<section class="roles" id="roles" aria-label="Who it's for">
+  <div class="roles__head">
+    <h2 class="h2">Everyone uses the same platform.<br><em>Everyone gets what they need from it.</em></h2>
+    <p>Pick your role to see what changes for you — the platform underneath stays the same.</p>
+  </div>
+  <div class="roles__tabs" role="tablist" aria-label="Roles" id="roleTabs"><i class="roles__ind" id="roleInd" aria-hidden="true"></i></div>
+  <div class="roles__body" id="rolePanel" role="tabpanel">
+    <p class="roles__tag" id="roleTag"></p>
+    <div class="roles__art"><canvas id="roleCanvas" aria-hidden="true"></canvas></div>
+    <div class="roles__txt" id="roleTxt"></div>
+  </div>
+</section>
+
+<section class="sec voices">
+  <div class="tools__head reveal" style="margin-bottom:0">
+    <h2 class="h2">Why teams choose EvoluteIQ instead <em>of juggling many tools.</em></h2>
+    <p class="lede">Three companies, three industries, one platform behind all of them.</p>
+  </div>
+  <div class="marquee" id="vq" aria-label="Customer stories. Hover a story to play it and pause the scroll."><div class="marquee__track" id="vqTrack"></div></div>
+  <p class="vhint">Hover a story to play it — the row pauses while you watch.</p>
+  <div class="analysts" id="analysts"></div>
+</section>
+
+<section class="sec news" id="news">
+  <div class="tools__head reveal" style="margin-bottom:0">
+    <h2 class="h2"><em>What's happening</em> at EvoluteIQ.</h2>
+    <p class="lede">Company news, product announcements and thinking from our team — including a few pieces picked up outside our own site.</p>
+  </div>
+  <div class="news__group">
+    <div class="news__group-head reveal"><h3 class="h3" style="font-size:clamp(28px,2.5vw,40px)">News</h3><a class="pill ghost" href="#news"><span data-t="All news">All news</span></a></div>
+    <div class="cards3" id="newsGrid"></div>
+  </div>
+  <div class="news__group">
+    <div class="news__group-head reveal"><h3 class="h3" style="font-size:clamp(28px,2.5vw,40px)">Blogs</h3><a class="pill ghost" href="#news"><span data-t="All blogs">All blogs</span></a></div>
+    <div class="cards3" id="blogGrid"></div>
+  </div>
+</section>
+
+<section class="sec plans" id="plans">
+  <div class="tools__head reveal" style="margin-bottom:0">
+    <h2 class="h2">Start small. <em>Grow without switching systems.</em></h2>
+    <p class="lede">Every plan runs on the same engine — moving up adds more features, not a whole new setup.</p>
+  </div>
+  <div class="plans__grid" id="planGrid"></div>
+  <div class="plans__foot reveal"><a class="link" href="#plans">Compare all plans in detail <svg viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a></div>
+</section>
+
+<section class="dark cta" id="demo">
+  <h2><span class="ln"><span>See EvoluteIQ run a real process,</span></span><span class="ln"><span><em>start to finish.</em></span></span></h2>
+  <p>No commitment — we'll walk you through an example from your industry, live.</p>
+  <div><a class="pill light" href="#demo"><span data-t="Get a demo">Get a demo</span></a></div>
+</section>
+</main>
+
+<footer class="dark footer" id="footer">
+  <nav class="fnav" id="fnav"></nav>
+  <div class="fcols">
+    <div><h4>Platform</h4><ul><li><a href="#platform">Platform overview</a></li><li><a href="#platform">GenAI</a></li><li><a href="#platform">Decision automation</a></li><li><a href="#platform">Intelligent RPA</a></li><li><a href="#platform">Process &amp; event flows</a></li><li><a href="#platform">Data fabric</a></li><li><a href="#platform">Analytics &amp; reporting</a></li><li><a href="#platform">Enterprise connectors</a></li></ul></div>
+    <div><h4>Product plans</h4><ul><li><a href="#plans">EIQ Lite</a></li><li><a href="#plans">EIQ Pro</a></li><li><a href="#plans">EIQ Enterprise</a></li><li><a href="#plans">Compare plans</a></li><li><a href="#demo">Get a demo</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="#industries">Banking</a></li><li><a href="#industries">Healthcare</a></li><li><a href="#industries">Insurance</a></li><li><a href="#industries">Telecom &amp; media</a></li><li><a href="#industries">Energy &amp; utilities</a></li><li><a href="#industries">Retail &amp; CPG</a></li></ul></div>
+    <div><h4>Insights</h4><ul><li><a href="#news">Customer stories</a></li><li><a href="#news">Newsroom</a></li><li><a href="#news">Analyst reports</a></li><li><a href="#news">Blogs</a></li><li><a href="#news">Events</a></li><li><a href="#news">Podcasts</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#top">About us</a></li><li><a href="#top">Careers</a></li><li><a href="#top">Partners</a></li><li><a href="#top">Trust &amp; security</a></li><li><a href="#top">ESG</a></li><li><a href="#demo">Contact us</a></li></ul></div>
+    <div class="news-l">
+      <h3>Stay in the loop, <em>not in the noise.</em></h3>
+      <p>Product updates, analyst coverage and customer stories, a couple of times a month.</p>
+      <form id="nl" novalidate><label for="em" style="position:absolute;left:-9999px">Work email</label><input id="em" type="email" placeholder="Work email" autocomplete="email"><button class="pill light" type="submit"><span data-t="Subscribe">Subscribe</span></button></form>
+      <div class="msg" id="nlMsg" role="status"></div>
+      <small>By subscribing you agree to receive emails from EvoluteIQ. You can unsubscribe at any time.</small>
+      <div class="social"><a href="#footer">LinkedIn</a><a href="#footer">Facebook</a><a href="#footer">Instagram</a><a href="#footer">YouTube</a></div>
+    </div>
+  </div>
+  <div class="fbottom">
+    <div class="wordmark" id="wm" aria-label="evoluteiq"></div>
+    <div class="fmeta"><p>© 2026 EvoluteIQ. All rights reserved.</p><a href="#footer">Privacy policy</a><a href="#footer">Terms of use</a><a href="#footer">Cookie settings</a></div>
+  </div>
+</footer>
+
+<script src="vendor/three.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="js/main.js?v=v16-20260928-1600"></script>
+</body>
+</html>

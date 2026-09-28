@@ -1,0 +1,10 @@
+{
+  "name": "evoluteiq-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EvoluteIQ marketing site — VECTR design system with scroll-driven 3D (three.js r128)",
+  "scripts": {
+    "start": "npx --yes serve -l 5173 .",
+    "dev": "npx --yes live-server --port=5173 ."
+  }
+}
